@@ -1,0 +1,109 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* above is a style reset */
+/*css begins here */
+body{
+    width: 100%;
+    height:100vh;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 4fr;
+    height: 100%;
+    width: 100%;
+
+}
+
+.side-Nav{
+    grid-area: 1 / 1 / 3 / 2;
+    background-color: lightskyblue;
+}
+
+.sidebar-link-container{
+    display: flex;
+
+}
+ .sidebar-link-container > img{
+    max-width: 20px;
+}
+
+.header{
+    grid-area: 1 / 2 / 2 / 4;
+    background-color: white;
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;  
+}
+.searchbar{
+    grid-area: 1 / 1 / 2 / 2;
+}
+.usercenter{
+    grid-area: 1 / 2 / 2 / 3;
+}
+.welcome-sign{
+    grid-area: 2 / 1 / 3 / 2;
+}
+.button-group{
+    grid-area: 2 / 2 / 3 / 3;
+}
+.headergroup{
+    display:flex;
+}
+.headergroup > img{
+    max-width: 20px;
+}
+
+.contentCont{
+    grid-area: 2 / 2 / 3 / 3;
+    background-color: lightgray;
+    border: solid 2px black;
+}
+
+.sidebarInfo{
+    grid-area: 2 / 3 / 3 / 4; 
+    background-color: lightgray;
+    border: solid 2px black;
+}
