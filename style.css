@@ -262,3 +262,23 @@ img{
     grid-area: 2 / 3 / 3 / 4; 
     
 }
+
+.side-content{
+    margin:1rem;
+    margin-left:.5rem;
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 1rem;
+}
+.announcements, .trending{
+    padding:1rem;
+    background-color: whitesmoke;
+    border-radius: 12px;
+}
+.announce {
+    display:flex;
+}
+.trend{
+    display:flex;
+    
+}
