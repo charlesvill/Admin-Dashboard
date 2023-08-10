@@ -90,7 +90,7 @@ h3, button {
     padding: 1rem;
 }
 .name{
-    font-size: 1.5rem;
+    font-size: 1.4vw;
     margin-left: .5rem;
 }
 .sidebar-link-container , .logo-container , .headergroup {
@@ -103,7 +103,7 @@ h3, button {
     background-color: #e2e8f0;
 }
 .logo-container > svg {
-    max-width: 3vw;
+    max-width: 2.5vw;
     height: auto;
     fill: currentColor;
 }
@@ -132,6 +132,8 @@ h3, button {
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr; 
     padding: 1rem;
+    box-shadow:
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 img{
     max-width: 4vw;
@@ -144,18 +146,18 @@ img{
 }
 .svg > svg{
     height: 100%;
-    max-width: 1.3rem;
+    max-width: 1.2vw;
     padding:1vw;
     margin-top: .2rem;
 }
 #searchinput{
     width: 40vw;
-    height: 2vh;
+    height: 1.5vw;
     border-radius: 15px;
     border-style: none;
     justify-self: center;
     background-color: #94a3b8;
-    padding: 1vw;
+    padding: 0;
     margin-left:.4rem;
 
 }
@@ -201,13 +203,12 @@ img{
 
 .contentCont{
     grid-area: 2 / 2 / 3 / 3;
-    padding-top:1.3rem;
-     
+         
 }
 .contentCont > p{
     font-size: 1.1rem;
     font-weight: bold;
-    margin-left:1.5rem;
+    margin:1.25rem 0 1rem 1rem;
 }
 .contentCont , .sidebarInfo {
     background-color: #94a3b8;
@@ -217,19 +218,13 @@ img{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap:1rem;
-    padding-left:1.5rem;
-    padding-right:.5rem;
-    padding-top: .5rem;
+    margin:.5rem 1rem 3rem 1rem;
 }
-.projects-container > svg {
-    max-width: 1rem;
-    height: auto;
-    fill:currentColor;
-}
+
 .proj {
     background-color: #e2e8f0;
-    width:22rem;
-    height:15rem;
+    justify-self: stretch;
+    align-self: stretch;
     border-radius:8px;
     padding: 1.5rem;
     padding-top:1.5rem;
@@ -238,6 +233,8 @@ img{
     flex-direction: column;
     justify-content: space-between;
     border-left: 9px solid #967bb6 ;
+    box-shadow:
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 
 }
 .proj > div > p:first-child{
@@ -249,13 +246,14 @@ img{
 .proj > div > p:nth-child(2){
     font-size: 1.1rem;
     color: #52525b;
+    line-height: 1.15;
 }
 .projbtns{
     display:flex;
     justify-content:flex-end;
 }
 .projbtns > svg {
-    max-width: 2rem;
+    max-width: 1.5vw;
     padding:.5rem;
 }
 .sidebarInfo{
@@ -264,21 +262,56 @@ img{
 }
 
 .side-content{
-    margin:1rem;
-    margin-left:.5rem;
+    margin: 0rem 1.5rem 0 .5rem;
+    margin-left:1rem;
     display:grid;
     grid-template-rows: 1fr 1fr;
     row-gap: 1rem;
 }
-.announcements, .trending{
-    padding:1rem;
+.side-group > p{
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin:1.25rem 0 1rem .1rem;
+}
+.side-container{
     background-color: whitesmoke;
     border-radius: 12px;
+    padding:2.5rem 2rem;
+    box-shadow:
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+
+
 }
-.announce {
-    display:flex;
+
+.announce{
+    border-bottom: 2px solid #d4d4d8;
+    padding:1.5rem 1rem;
+}
+.announce.three{
+    border-bottom: none;
+}
+.announce > p:first-child{
+    font-weight: bold;
+    padding-bottom: .3rem;
+}
+.announce > p:nth-child(2){
+    color: #52525b;
+    line-height: 1.15;
+    font-size: .94rem;
 }
 .trend{
     display:flex;
+    align-items: center;
+    padding:.5rem;
     
+}
+.trend > img {
+    max-width: 2.5vw;
+}
+.trendtext {
+    margin-left:.5rem;
+}
+.trendtext > p:last-child{
+    color: #52525b;
+    padding-top:.2rem;
 }
