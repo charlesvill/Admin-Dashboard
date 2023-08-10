@@ -70,7 +70,7 @@ h3, button {
 }
 .container{
     display: grid;
-    grid-template-columns: 1fr 3fr .9fr;
+    grid-template-columns: 1fr 3fr 1.1fr;
     grid-template-rows: .7fr 4fr;
     height: 100%;
     width: 100%;
@@ -116,6 +116,7 @@ h3, button {
     font-weight: bolder;
     position: relative;
     top: .1rem;
+    font-size: 1.2rem;
 }
  .sidebar-link-container > svg{
     max-width: 1.3vw;
@@ -200,18 +201,25 @@ img{
 
 .contentCont{
     grid-area: 2 / 2 / 3 / 3;
+    padding-top:1.3rem;
      
+}
+.contentCont > p{
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-left:1.5rem;
 }
 .contentCont , .sidebarInfo {
     background-color: #94a3b8;
-    border: solid 2px black;
 }
 .projects-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap:1rem;
-    padding:1rem;
+    padding-left:1.5rem;
+    padding-right:.5rem;
+    padding-top: .5rem;
 }
 .projects-container > svg {
     max-width: 1rem;
@@ -220,10 +228,35 @@ img{
 }
 .proj {
     background-color: #e2e8f0;
-    width:20rem;
-    height:10rem;
+    width:22rem;
+    height:15rem;
     border-radius:8px;
-    padding: 5px;
+    padding: 1.5rem;
+    padding-top:1.5rem;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 9px solid #967bb6 ;
+
+}
+.proj > div > p:first-child{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem;
+    padding-left:0;
+}
+.proj > div > p:nth-child(2){
+    font-size: 1.1rem;
+    color: #52525b;
+}
+.projbtns{
+    display:flex;
+    justify-content:flex-end;
+}
+.projbtns > svg {
+    max-width: 2rem;
+    padding:.5rem;
 }
 .sidebarInfo{
     grid-area: 2 / 3 / 3 / 4; 
